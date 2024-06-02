@@ -8,7 +8,7 @@ function Calculator() {
     const states=[useState(0),useState(''),useState(''),useState('')]
     return(
         <div className="Box container">
-            <Afficheur text={String(states[0][0])} op={String(states[2][0])}></Afficheur>
+            <Afficheur text={String(states[0][0])}></Afficheur>
             <div className='container' >
                 <Button width={2} value='AC' states={states} />
                 <Button width={1} value='DEL' states={states} />
